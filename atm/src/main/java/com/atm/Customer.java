@@ -24,24 +24,24 @@ public class Customer {
         }
 
         public String generateAccountNumber() {
-            String ac = "";
-            String s = "";
+            String accountNumber = "";
+            String temp = "";
             for (int i = 0; i < 10; i++) {
                 int n = (int) Math.round((Math.random() * 1e16) % 9);
-                s += n;
+                temp += n;
             }
-            ac += s;
-            return ac;
+            accountNumber += temp;
+            return accountNumber;
         }
 
         public String generatePin() {
             String pin = "";
-            String s = "";
+            String temp = "";
             for (int i = 0; i < 5; i++) {
                 int n = (int) Math.round((Math.random() * 1e16) % 9);
-                s += n;
+                temp += n;
             }
-            pin += s;
+            pin += temp;
             return pin;
         }
 
